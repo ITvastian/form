@@ -55,9 +55,11 @@
 		<div class="banner" style="background-image: url('./img/banner.jpg')">
       <form name="contact" method="POST" data-netlify="true">
       <div data-netlify-recaptcha="true"></div>
-			<textarea>Vota 1</textarea>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <input type="submit" value="Enviar">
+			<button type="submit">Send</button>
     </form>
-			<button class="boton" type="submit">Send</button>
 		</div>
 	</div>
 </body>
