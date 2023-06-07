@@ -21,6 +21,8 @@ body {
 .titulo {
   font-size: 24px;
   padding: 20px 0;
+  letter-spacing: 1px;
+  line-height:29px;
 }
 
 .contenedor-conciertos {}
@@ -28,21 +30,35 @@ body {
 .card {
   margin: 15px;
   border-radius: 10px;
-  min-height: 400px;
+  min-height: 500px;
   max-width: 400vh;
   padding: 20px;
   position: relative;
   overflow: hidden;
-  background-size: cover;
+  background-size:cover;
   background-position: center center;
+  background-repeat: no-repeat;
 
 }
 
 .card .textos {
   height: 100%;
-
-
+  font-size: 40px;
+  
 }
+.card .textos p{
+  background-color: #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  border:3px solid #1D202B;
+  font-weight: 600;
+}
+
 
 .banner {
   border-radius: 10px;
