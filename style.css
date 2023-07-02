@@ -8,6 +8,7 @@ body {
   background: #1D202B;
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  user-select: none;
 }
 
 .contenedor {
@@ -25,31 +26,49 @@ body {
   line-height:29px;
 }
 .titulo .titulo-p{
-  text-align: center;
+  position: relative;
+  width: 1000px;
+  height: 100px;
   color: #955a5a;
   font-family: 'Lucida Sans', 'Lucida Grande';
+  animation: mover 4s forwards alternate;
 }
 
-.contenedor-conciertos {}
+@keyframes mover {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
 
-.card {
+.contenedor-conciertos {
+}
+
+.card{
   margin: 15px;
   border-radius: 10px;
   min-height: 500px;
   max-width: 400vh;
   padding: 20px;
-  position: relative;
   overflow: hidden;
-  background-size:cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
+  display: flex;
+  justify-content: center;
+}
+.card img{
+  border-radius: 12px;
+  box-shadow: 4px 4px 9px 2px rgba(96, 96, 96, 0.5);
 }
 
+
+
 .card .textos {
+  margin-top: 10px;
   height: 100%;
   font-size: 40px;
-  
+  display: block;
+  position: absolute;
 }
 .card .textos p{
   background-color: #000000;
@@ -69,9 +88,15 @@ body {
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-justify-content: center;
+  justify-content: center;
   display: flex;
 }
+#nombre{
+border-radius: 50px;
+background-color: #1D202B;
+background: #f9f9f9;
+}
+
 .banner .boton {
   background: #6b6a65;
   display: block;
@@ -93,6 +118,9 @@ justify-content: center;
   color: #fff;
   border:2px solid #6b6a65;
   transition:  .3s;
+  font-size: 14px;
+  user-select: none;
+
 }
 
 .banner .label-banner{
@@ -108,6 +136,8 @@ justify-content: center;
 }
 footer{
   margin: 10px;
+  pointer-events: none;
+  display: block;
 }
 footer .footer-p{
   font-size: 20px;
@@ -118,7 +148,9 @@ footer .footer-p{
   border-radius: 6px;
 }
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {
+
+}
 
 @media screen and (max-width: 700px) {}
 
