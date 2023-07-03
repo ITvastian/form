@@ -9,6 +9,7 @@ body {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   user-select: none;
+  flex-wrap: wrap;
 }
 
 .contenedor {
@@ -43,8 +44,10 @@ body {
   }
 }
 
-.contenedor-conciertos {
-}
+
+
+
+
 
 .card{
   margin: 15px;
@@ -149,9 +152,40 @@ footer .footer-p{
 }
 
 @media screen and (max-width: 900px) {
+.contenedor .titulo .titulo-p{
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  max-width: 30vh;
+  }
+  .card{
+min-height: 60%;
+  }
+  .card img{
+    border-radius: 10px;
+    max-width: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .banner form{
+    background-color: #363636;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .banner form .label-banner{
+    color: rgb(227, 227, 227);
+  }
+  .banner form input[type=submit]{
+    padding: none;
+    margin: none;
+  }   
+
+footer .footer-p{
+  margin-top: 100px;
+}
 
 }
 
-@media screen and (max-width: 700px) {}
-
-@media screen and (max-width: 600px) {}
