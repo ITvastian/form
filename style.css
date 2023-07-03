@@ -197,6 +197,7 @@ footer .footer-p {
     height: 100%;
     object-fit: contain;
     object-position: center;
+    transform: rotate(0deg);
   }
 
   .banner form {
